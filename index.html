@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Au Clos d'Ardennes — Chambres d'hôtes à Balaives-et-Butz, près de Charleville-Mézières</title>
+<meta name="description" content="Au Clos d'Ardennes, chambres d'hôtes de Michel et Micheline Lobre dans une authentique maison ardennaise à Balaives-et-Butz, à quelques minutes de Charleville-Mézières. Trois chambres, jacuzzi, sauna, jardin. À partir de 60 € la nuit, petit-déjeuner compris.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232E231C'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23FAF6EE' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --encre:#2E231C; --encre-2:#6B5A4C; --creme:#FAF6EE; --blanc:#ffffff;
+  --pierre:#C2A079; --terre:#B2452B; --terre-f:#8E3520; --or:#C8912B;
+  --ligne:#E8DFD2; --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--creme);color:var(--encre);font-family:'Mulish',system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3,.ff{font-family:'Newsreader',Georgia,serif;font-weight:500;line-height:1.1;letter-spacing:-.01em}
+.wrap{width:min(1180px,calc(100% - 44px));margin-inline:auto}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--terre)}
+
+header{position:sticky;top:0;z-index:60;background:rgba(250,246,238,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--ligne)}
+.hd{display:flex;align-items:center;gap:26px;padding:14px 0}
+.mark{display:flex;flex-direction:column;text-decoration:none;flex:0 0 auto;line-height:1.1}
+.mark b{font-family:'Newsreader',serif;font-weight:500;font-size:23px;letter-spacing:-.01em}
+.mark span{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--encre-2);font-weight:600;margin-top:3px}
+nav{margin-left:auto;display:flex;gap:26px;align-items:center}
+nav a{text-decoration:none;font-size:15px;font-weight:600;color:var(--encre-2)}
+nav a:hover{color:var(--terre)}
+.btel{background:var(--terre);color:var(--creme)!important;padding:11px 18px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap}
+.btel:hover{background:var(--terre-f)}
+
+.hero{padding:52px 0 0}
+.hgrid{display:grid;grid-template-columns:1fr 1.04fr;gap:52px;align-items:center}
+h1{font-size:clamp(38px,5vw,62px);margin:16px 0 20px}
+h1 em{font-style:italic;color:var(--terre)}
+.lede{font-size:18.5px;color:var(--encre-2);max-width:44ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.b1,.b2{text-decoration:none;font-weight:700;font-size:16px;padding:14px 24px;border-radius:999px}
+.b1{background:var(--encre);color:var(--creme)}
+.b1:hover{background:var(--terre)}
+.b2{border:1.5px solid var(--encre);color:var(--encre)}
+.b2:hover{border-color:var(--terre);color:var(--terre)}
+.hvis img{border-radius:var(--r);box-shadow:0 22px 50px rgba(46,35,28,.16);width:100%;max-width:990px}
+
+.faits{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--ligne);border:1px solid var(--ligne);border-radius:var(--r);overflow:hidden;margin-top:50px}
+.faits div{background:var(--creme);padding:24px 22px}
+.faits strong{font-family:'Newsreader',serif;font-size:31px;display:block;font-weight:500}
+.faits p{font-size:14.5px;color:var(--encre-2);margin-top:3px;line-height:1.42}
+
+section{padding:74px 0}
+.shead{max-width:62ch;margin-bottom:38px}
+h2{font-size:clamp(30px,3.6vw,44px);margin:14px 0 14px}
+.shead p{color:var(--encre-2);font-size:18px}
+
+.ch{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--blanc);border:1px solid var(--ligne);border-radius:var(--r);padding:28px 26px}
+.card h3{font-size:25px;margin-bottom:8px}
+.card .sous{font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terre);margin-bottom:12px}
+.card p{font-size:15.5px;color:var(--encre-2)}
+
+.liste{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:6px}
+.liste span{background:var(--blanc);border:1px solid var(--ligne);border-radius:999px;padding:10px 18px;font-size:15px;font-weight:600;text-align:center}
+
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.gal figure{border-radius:var(--r);overflow:hidden;border:1px solid var(--ligne);background:var(--blanc)}
+.gal figure img{width:100%;height:100%;object-fit:cover}
+.g1{grid-column:span 4;aspect-ratio:3/2}
+.g2{grid-column:span 2;aspect-ratio:2/3}
+.g3{grid-column:span 2;aspect-ratio:3/2}
+.g4{grid-column:span 2;aspect-ratio:3/2}
+.g5{grid-column:span 2;aspect-ratio:3/2}
+
+.tarifs{background:var(--blanc);border:1px solid var(--ligne);border-radius:var(--r);overflow:hidden}
+.tr{display:flex;align-items:center;gap:16px;padding:17px 28px;border-bottom:1px solid var(--ligne)}
+.tr:last-child{border-bottom:0}
+.tr b{flex:1;font-weight:600;font-size:16.5px}
+.tr i{font-style:normal;font-family:'Newsreader',serif;font-size:26px;font-weight:500}
+.tr.sm i{font-size:19px;color:var(--encre-2)}
+
+.bloc{background:var(--encre);color:var(--creme);border-radius:var(--r);padding:52px 48px}
+.bloc h2{color:var(--creme)}
+.bloc .eyebrow{color:#D9A98E}
+.bloc p{color:#D8CCBF;max-width:58ch;font-size:17.5px}
+.bloc .cta{margin-top:30px}
+.bloc .b1{background:var(--terre);color:var(--creme)}
+.bloc .b1:hover{background:#C8502F}
+.bloc .b2{border-color:#8A7765;color:var(--creme)}
+.bloc .b2:hover{border-color:var(--creme);color:var(--creme)}
+
+.avis{background:var(--blanc);border:1px solid var(--ligne);border-radius:var(--r);padding:36px 40px;display:grid;grid-template-columns:auto 1fr;gap:38px;align-items:center}
+.note strong{font-family:'Newsreader',serif;font-size:52px;line-height:1;display:block;font-weight:500}
+.note .et{color:var(--or);font-size:18px;letter-spacing:2px}
+.note p{font-size:14px;color:var(--encre-2);margin-top:4px}
+.avis q{font-family:'Newsreader',serif;font-size:22px;font-style:italic;line-height:1.45;quotes:"«\00a0" "\00a0»"}
+.avis cite{display:block;font-style:normal;font-size:14px;color:var(--encre-2);margin-top:12px;font-family:'Mulish',sans-serif;font-weight:500}
+
+.ctc{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.box{background:var(--blanc);border:1px solid var(--ligne);border-radius:var(--r);padding:30px 32px}
+.box h3{font-size:21px;margin-bottom:16px}
+.ln{display:flex;gap:12px;padding:9px 0;font-size:16px;border-bottom:1px solid var(--ligne)}
+.ln:last-child{border-bottom:0}
+.ln b{flex:0 0 118px;font-weight:600;color:var(--encre-2);font-size:14.5px}
+.ln a{text-decoration:none;font-weight:600;color:var(--terre)}
+
+.aconf{display:inline-flex;align-items:center;gap:7px;background:#FBF1DF;border:1px dashed var(--or);color:#7E5A12;font-size:13px;font-weight:600;border-radius:999px;padding:5px 13px;margin-top:14px}
+.aconf::before{content:"?";display:grid;place-items:center;width:16px;height:16px;border-radius:50%;background:var(--or);color:#fff;font-size:11px;font-weight:700}
+
+footer{background:var(--encre);color:#A99887;padding:46px 0 40px;font-size:14.5px}
+footer a{color:#E4D9CC}
+.fg{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start}
+.fg b{color:var(--creme);font-family:'Newsreader',serif;font-weight:500;font-size:20px;display:block;margin-bottom:8px}
+
+.demo{position:fixed;right:16px;bottom:16px;z-index:90;background:var(--encre);color:var(--creme);text-decoration:none;font-size:12.5px;font-weight:700;letter-spacing:.07em;padding:10px 15px;border-radius:999px;box-shadow:0 8px 22px rgba(46,35,28,.3)}
+.demo:hover{background:var(--terre)}
+
+@media(max-width:980px){
+  .hgrid{grid-template-columns:1fr;gap:34px}
+  .faits{grid-template-columns:1fr 1fr}
+  .ch,.ctc{grid-template-columns:1fr}
+  .liste{grid-template-columns:1fr 1fr}
+  nav a:not(.btel){display:none}
+  .bloc{padding:38px 26px}
+  .avis{grid-template-columns:1fr;gap:20px;padding:30px 26px}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .g1,.g2,.g3,.g4,.g5{grid-column:span 2;aspect-ratio:3/2}
+  .g2{aspect-ratio:3/2}
+}
+@media(max-width:560px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 32px)}
+  .faits{grid-template-columns:1fr}
+  .liste{grid-template-columns:1fr}
+  .hero{padding:36px 0 0}
+  section{padding:54px 0}
+  .mark b{font-size:19px}
+  .mark span{font-size:10px}
+  .btel{padding:9px 14px;font-size:14px}
+  .box{padding:26px 22px}
+  .ln{flex-direction:column;gap:1px}
+  .ln b{flex:none}
+  .ln a,.ln span{overflow-wrap:anywhere}
+  .tr{padding:15px 20px}
+  .avis q{font-size:19px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="mark" href="#top"><b>Au Clos d'Ardennes</b><span>Balaives-et-Butz · Ardennes</span></a>
+    <nav>
+      <a href="#chambres">Les chambres</a>
+      <a href="#maison">La maison</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#contact">Contact</a>
+      <a class="btel" href="tel:+33324378606">03 24 37 86 06</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="wrap hero">
+  <div class="hgrid">
+    <div>
+      <p class="eyebrow">Chambres d'hôtes · à 10 minutes de Charleville</p>
+      <h1>Une maison ardennaise, <em>trois chambres</em>, un village au creux d'un vallon.</h1>
+      <p class="lede">Michel et Micheline vous accueillent au Clos d'Ardennes, à Balaives-et-Butz. Jacuzzi, sauna, jardin et un petit-déjeuner qui tient la matinée.</p>
+      <div class="cta">
+        <a class="b1" href="tel:+33324378606">03 24 37 86 06</a>
+        <a class="b2" href="mailto:le.clos.ardennes@gmail.com">Réserver par mail</a>
+      </div>
+    </div>
+    <div class="hvis">
+      <img src="facade.jpg" width="1140" height="855" alt="La façade en pierre du Clos d'Ardennes, volets blancs, rosiers en fleurs devant l'entrée.">
+    </div>
+  </div>
+
+  <div class="faits">
+    <div><strong>3</strong><p>Chambres et suites, chacune avec sa salle de bain, sa salle d'eau et ses WC.</p></div>
+    <div><strong>60 €</strong><p>La nuit pour une personne, petit-déjeuner compris.</p></div>
+    <div><strong>4,4</strong><p>Sur Google, 52 avis.</p></div>
+    <div><strong>10 min</strong><p>De Charleville-Mézières, en pleine campagne.</p></div>
+  </div>
+</div>
+
+<section id="chambres">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">Les chambres</p>
+      <h2>Trois chambres, trois ambiances.</h2>
+      <p>Chacune dispose de sa salle de bain, de sa salle d'eau et de ses WC. Wifi dans toute la maison, lit bébé sur demande.</p>
+    </div>
+    <div class="ch">
+      <div class="card">
+        <p class="sous">Suite</p>
+        <h3>Amérindienne</h3>
+        <p>Salle de bain, salle d'eau et WC privatifs.</p>
+      </div>
+      <div class="card">
+        <p class="sous">Suite</p>
+        <h3>Grand Large</h3>
+        <p>Salle de bain, salle d'eau et WC privatifs.</p>
+      </div>
+      <div class="card">
+        <p class="sous">Suite</p>
+        <h3>Ying et Yang</h3>
+        <p>Salle de bain, salle d'eau et WC privatifs.</p>
+      </div>
+    </div>
+    <p class="aconf">À compléter avec vous : la surface, le couchage et deux photos pour chaque chambre. Je n'ai pas voulu deviner laquelle est laquelle.</p>
+  </div>
+</section>
+
+<section id="maison" style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">La maison</p>
+      <h2>Ce qu'il y a dans la maison et dehors.</h2>
+    </div>
+    <div class="liste">
+      <span>Jacuzzi</span><span>Sauna</span><span>Pièce fitness</span><span>Véranda</span>
+      <span>Terrasse</span><span>Jardin</span><span>Jeux</span><span>Table de ping-pong</span>
+      <span>Parking</span><span>Garage fermé</span><span>Wifi</span><span>Lit bébé sur demande</span>
+    </div>
+    <p class="aconf">À confirmer : le jacuzzi et le sauna sont-ils compris dans la nuitée ou en supplément ?</p>
+  </div>
+</section>
+
+<section id="galerie" style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">En images</p>
+      <h2>La maison, telle qu'elle est.</h2>
+      <p>Vos photos, reprises depuis votre fiche Google, sans retouche ni filtre.</p>
+    </div>
+    <div class="gal">
+      <figure class="g1"><img src="chambre.jpg" width="1320" height="876" alt="Chambre avec poutres apparentes, lit double, mobilier en bois sombre et lampes de chevet."></figure>
+      <figure class="g2"><img src="salle-eau.jpg" width="585" height="881" alt="Salle d'eau carrelée avec cabine de douche arrondie et vasque."></figure>
+      <figure class="g3"><img src="petit-dejeuner.jpg" width="900" height="600" alt="Table du petit-déjeuner dressée : viennoiseries, confitures, jus de fruits et bouquet d'amours en cage."></figure>
+      <figure class="g4"><img src="salon.jpg" width="1320" height="876" alt="Coin salon avec banquette orange, coussins blancs et plateau de café."></figure>
+      <figure class="g5"><img src="facade.jpg" width="1140" height="855" alt="La façade en pierre de la maison, volets blancs et massifs fleuris."></figure>
+    </div>
+    <p class="aconf">Il en manque : le jardin, la véranda, le jacuzzi, le sauna. Ce sont souvent eux qui décident un visiteur.</p>
+  </div>
+</section>
+
+<section id="tarifs" style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">Tarifs</p>
+      <h2>Simples, et affichés.</h2>
+    </div>
+    <div class="tarifs">
+      <div class="tr"><b>Nuitée, 1 personne</b><i>60 €</i></div>
+      <div class="tr"><b>Nuitée, 2 personnes</b><i>65 €</i></div>
+      <div class="tr"><b>Nuitée, 3 personnes</b><i>83 €</i></div>
+      <div class="tr sm"><b>Taxe de séjour, par personne et par nuit</b><i>0,83 €</i></div>
+    </div>
+    <p class="aconf">À confirmer : les tarifs affichés ici viennent de votre fiche à l'Agence de développement touristique. Arrivée annoncée à partir de 17h.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="bloc">
+      <p class="eyebrow">Réserver</p>
+      <h2>En direct, par téléphone ou par mail.</h2>
+      <p>Aujourd'hui, un visiteur qui vous cherche tombe sur Booking, Expedia ou Hotels.com avant de tomber sur vous. Chacune de ces réservations vous coûte une commission. Une page comme celle-ci donne au visiteur l'autre chemin : vous appeler, ou vous écrire.</p>
+      <div class="cta">
+        <a class="b1" href="tel:+33324378606">03 24 37 86 06</a>
+        <a class="b2" href="mailto:le.clos.ardennes@gmail.com">le.clos.ardennes@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="avis">
+      <div class="note">
+        <strong>4,4</strong>
+        <div class="et">★★★★★</div>
+        <p>52 avis Google</p>
+      </div>
+      <div>
+        <q>Dans un charmant village niché au creux d'un vallon, Michel et Micheline vous accueillent dans leur authentique maison ardennaise à quelques minutes de Charleville-Mézières.</q>
+        <cite>Votre propre présentation, telle qu'elle est publiée sur ardennes.com.</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">Contact</p>
+      <h2>Venir au Clos d'Ardennes.</h2>
+    </div>
+    <div class="ctc">
+      <div class="box">
+        <h3>Nous joindre</h3>
+        <div class="ln"><b>Téléphone</b><a href="tel:+33324378606">03 24 37 86 06</a></div>
+        <div class="ln"><b>Mobile</b><a href="tel:+33680008483">06 80 00 84 83</a></div>
+        <div class="ln"><b>E-mail</b><a href="mailto:le.clos.ardennes@gmail.com">le.clos.ardennes@gmail.com</a></div>
+        <div class="ln"><b>Adresse</b><span>14 Grande Rue, 08160 Balaives-et-Butz</span></div>
+        <div class="ln"><b>Arrivée</b><span>À partir de 17h00</span></div>
+        <p class="aconf">À vérifier : Google affiche votre adresse en « 08160 Flize », votre fiche touristique en « Balaives-et-Butz ». C'est la même commune postale, mais autant choisir.</p>
+      </div>
+      <div class="box">
+        <h3>Bon à savoir</h3>
+        <div class="ln"><b>Langues</b><span>Français, anglais</span></div>
+        <div class="ln"><b>Label</b><span>Clévacances, référence CH 147 A</span></div>
+        <div class="ln"><b>Situation</b><span>À la campagne, à 10 minutes de Charleville-Mézières</span></div>
+        <div class="ln"><b>À proximité</b><span>Sentiers de randonnée, pêche en étang</span></div>
+        <div class="ln"><b>Animaux</b><span>À préciser</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap fg">
+    <div>
+      <b>Au Clos d'Ardennes</b>
+      14 Grande Rue, 08160 Balaives-et-Butz<br>
+      <a href="tel:+33324378606">03 24 37 86 06</a> · <a href="mailto:le.clos.ardennes@gmail.com">le.clos.ardennes@gmail.com</a>
+    </div>
+    <div>
+      <b>Informations</b>
+      <a href="mentions-legales.html">Mentions légales</a><br>
+      Michel et Micheline Lobre
+    </div>
+    <div>
+      <b>Label</b>
+      Clévacances, référence CH 147 A<br>
+      Trois chambres, petit-déjeuner compris.
+    </div>
+  </div>
+</footer>
+
+<a class="demo" href="https://kraon.netlify.app/offre" target="_blank" rel="noopener">DÉMO KRAON</a>
+
+</body>
+</html>
